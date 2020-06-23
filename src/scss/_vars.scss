@@ -1,0 +1,17 @@
+$fontSize: 10;
+
+@mixin fullsize($offset:0, $position:'absolute'){
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: $position;
+}
+
+@function rem($value){
+    $result: ($value/10)+rem;
+    @return $result;
+}
+
+$bg: red;
+$border: rem(4) black solid;
